@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Rubik+Dirt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+nav {
+    height: 66px;
+    background-color: rgb(107, 107, 233);
+}
+
+nav img {
+    margin-left: 25px;
+}
+
+/* main */
+main {
+    height: 601px;
+    display: flex;
+}
+
+/* game  */
+.game {
+    width: 575px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(227 227 236 / 59%);
+    border-radius: 35px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px 0px #2b23ab;
+    flex-wrap: wrap;
+    margin: 32px 11px;
+    flex-direction: column;
+}
+
+.senbox {
+    color: #0a0a39;
+    width: 442px;
+    height: 82px;
+    background-color: #cbc6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #afabe3;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 2px #c8c7e8;
+    font-size: 21px;
+}
+
+textarea {
+    color: #0a0a39;
+    width: 442px;
+    height: 102+px;
+    background-color: #cbc6f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #afabe3;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 2px #c8c7e8;
+    font-size: 21px;
+    padding: 8%;
+    margin-top: 30px;
+}
+
+
+button {
+    width: 201px;
+    height: 56px;
+    background-color: rgb(36 100 230);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px rgb(117 142 225);
+    font-size: 30px;
+    color: #0a0a39;
+}
+
+button:hover {
+    background-color: rgb(58, 76, 209);
+    transform: translateY(-6px);
+}
+
+/* score */
+.score {
+    width: 575px;
+    height: 500px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(227 227 236 / 59%);
+    border-radius: 35px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 15px 0px #2b23ab;
+    flex-wrap: wrap;
+    margin: 32px 11px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.score h1 {
+    color: rgb(107, 107, 233);
+    font-size: 40px;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 23px;
+}
+
+.score h2 {
+    color: rgb(107, 107, 233);
+    font-size: 40px;
+}
+.score p{
+        font-size: 30px;
+}
+
+.emoji {
+    /* background-color: #2b23ab; */
+    height: 191px;
+    width: 254px;
+}
+
+/* footer */
+footer {
+    height: 66px;
+    background-color: rgb(107, 107, 233);
+}
