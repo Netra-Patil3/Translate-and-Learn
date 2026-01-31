@@ -8,7 +8,7 @@
 
 /* header */
 nav {
-    height: 66px;
+    height: 9vh;
     background-color: rgb(107, 107, 233);
 }
 
@@ -18,8 +18,9 @@ nav img {
 
 /* main */
 main {
-    height: 601px;
+    height: 82vh;
     display: flex;
+    margin: auto;
 }
 
 /* game  */
@@ -118,8 +119,9 @@ button:hover {
     color: rgb(107, 107, 233);
     font-size: 40px;
 }
-.score p{
-        font-size: 30px;
+
+.score p {
+    font-size: 30px;
 }
 
 .emoji {
@@ -130,6 +132,6 @@ button:hover {
 
 /* footer */
 footer {
-    height: 66px;
+    height: 9vh;
     background-color: rgb(107, 107, 233);
 }
