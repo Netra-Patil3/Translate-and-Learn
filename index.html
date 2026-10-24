@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Translate &amp; Learn</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
     </style>
@@ -14,83 +14,179 @@
             box-sizing: border-box;
         }
 
-        /* header */
+        body {
+            min-height: 100vh;
+            min-height: 100svh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header,
+        footer {
+            flex: 0 0 auto;
+        }
+
         nav {
-            height: 9vh;
+            height: clamp(56px, 9vh, 81px);
             background-color: rgb(107, 107, 233);
+            display: flex;
+            align-items: center;
         }
 
         nav img {
             margin-left: 25px;
+            max-width: calc(100% - 32px);
+            max-height: 65px;
+            height: auto;
+            display: block;
         }
-        /* main */
+
         main {
-            height: 82vh;
+            flex: 1 0 auto;
+            width: min(100%, 1600px);
+            min-height: 82vh;
+            margin: 0 auto;
+            padding: 24px clamp(16px, 4vw, 64px);
             display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(24px, 4vw, 72px);
+        }
+
+        main > div:first-child {
+            flex: 0 1 485px;
+            min-width: 0;
+        }
+
+        main > div:first-child img {
+            display: block;
+            width: 100%;
+            max-height: min(583px, 60vh);
+            height: auto;
+            object-fit: contain;
         }
 
         .content {
             display: flex;
             justify-content: center;
             align-items: center;
-            /* width: -webkit-fill-available; */
-            width: 100%;
+            flex: 1 1 0;
+            min-width: 0;
             flex-direction: column;
-
         }
 
         .content h1,
-        h2 {
+        .content h2 {
             color: rgb(107, 107, 233);
             font-family: "Luckiest Guy", cursive;
             font-weight: 400;
             font-style: normal;
-            font-size: 120px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: clamp(3rem, 8.35vw, 7.5rem);
+            line-height: 1.05;
         }
 
         .content h2 {
-            font-size: 85px;
+            font-size: clamp(2.5rem, 5.9vw, 5.3125rem);
+            line-height: 1.05;
         }
 
         .content h3 {
             color: rgb(107, 107, 233);
             font-weight: 500;
             font-style: normal;
-            font-size: 120px;
+            font-size: clamp(2rem, 8.35vw, 7.5rem);
+            line-height: 1.05;
+            text-align: center;
+            overflow-wrap: anywhere;
+        }
+
+        .content > a {
+            display: block;
+            width: min(200px, 100%);
         }
 
         .content button {
-            height: 50px;
-            width: 200px;
+            min-height: 50px;
+            width: 100%;
             margin-top: 25px;
             background-color: rgb(107, 107, 233);
             color: white;
             border-radius: 20px;
-            font-size: 35px;
+            font-size: clamp(1.5rem, 2.5vw, 2.1875rem);
             box-shadow: -1px 0px 13px 4px rgb(135, 135, 252);
-
         }
 
         .content button:hover {
-            background-color:  rgb(100, 100, 167);
+            background-color: rgb(100, 100, 167);
             transform: translateY(-6px);
         }
-        /* footer */
+
         footer {
-            height: 9vh;
+            flex: 0 0 clamp(44px, 9vh, 81px);
+            min-height: clamp(44px, 9vh, 81px);
             background-color: rgb(107, 107, 233);
+        }
+
+        @media (max-width: 1024px) {
+            main {
+                min-height: 0;
+                padding: 16px 20px 20px;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            main > div:first-child {
+                flex: 0 1 auto;
+                width: 100%;
+            }
+
+            main > div:first-child img {
+                width: clamp(160px, 52vw, 280px);
+                max-height: clamp(120px, 35vh, 280px);
+                margin: 0 auto;
+                object-fit: contain;
+            }
+
+            .content {
+                flex: 0 1 auto;
+                width: 100%;
+            }
+
+            .content h1 {
+                font-size: clamp(2.75rem, 13vw, 5rem);
+            }
+
+            .content h2 {
+                font-size: clamp(2.25rem, 10vw, 4rem);
+            }
+
+            .content h3 {
+                font-size: clamp(1.75rem, 8vw, 3rem);
+            }
+
+            .content button {
+                min-height: 56px;
+            }
+
+            .content > a {
+                width: min(280px, 100%);
+            }
         }
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <img src="img\Logo.png" height="65px">
+            <img src="img\Logo.png" height="65">
         </nav>
     </header>
     <main>
         <div>
-            <img src="img\welcome.jpeg">
+            <img src="img\welcome.jpeg" alt="">
         </div>
         <div class="content">
             <h1>welcome</h1>

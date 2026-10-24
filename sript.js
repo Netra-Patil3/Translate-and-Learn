@@ -32,6 +32,7 @@ const emoji = document.querySelector(".emoji");
 const correctsound = new Audio("audio/correct.mp3");
 const incorrectsound = new Audio("audio/incorrect.wav");
 const correctans = document.querySelector(".a");
+const feedback = document.querySelector(".feedback");
 const checkBtn = document.getElementById("checkBtn");
 
 let i = 0;
